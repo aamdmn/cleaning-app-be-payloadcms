@@ -2,6 +2,7 @@ import { buildConfig } from 'payload/config';
 import path from 'path';
 import Users from './collections/Users';
 import Customers from './collections/Customers';
+import Orders from './collections/Orders';
 
 export default buildConfig({
   serverURL: 'http://localhost:3000',
@@ -9,6 +10,7 @@ export default buildConfig({
     user: Users.slug,
   },
   collections: [
+    Orders,
     Customers,
     Users,
   ],
