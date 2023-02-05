@@ -5,6 +5,7 @@ const Customers: CollectionConfig = {
     admin: {
         useAsTitle: 'name',
     },
+    auth: true,
     fields: [
         {
             type: 'row',
