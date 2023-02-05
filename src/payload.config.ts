@@ -6,6 +6,7 @@ import Orders from './collections/Orders';
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_BASE_DNS,
+  cors: ('*'),
   admin: {
     user: Users.slug,
   },
